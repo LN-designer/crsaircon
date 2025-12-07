@@ -32,6 +32,7 @@
                         sans: ['Inter', 'sans-serif'],
                         display: ['Outfit', 'sans-serif'],
                         heading: ['Oswald', 'sans-serif'],
+                        serif: ['Times New Roman', 'serif'], // Added for Logo Text
                     },
                     colors: {
                         brand: {
@@ -59,15 +60,15 @@
     <style>
         body { background-color: #F8FAFC; }
         .glass-nav {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0,0,0,0.05);
+            border-bottom: 1px solid rgba(0,0,0,0.08);
         }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         
         .whatsapp-float {
-            position: fixed; bottom: 90px; right: 20px; z-index: 40; /* Raised for mobile bar */
+            position: fixed; bottom: 90px; right: 20px; z-index: 40;
             background: #25d366; color: white; width: 60px; height: 60px;
             border-radius: 50%; display: flex; align-items: center; justify-content: center;
             box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); transition: transform 0.3s;
@@ -83,7 +84,7 @@
         }
     </style>
 </head>
-<body class="text-gray-800 antialiased pb-16 md:pb-0"> <!-- Padding bottom for mobile bar -->
+<body class="text-gray-800 antialiased pb-16 md:pb-0">
 
     <!-- Top Bar (Trust Signal) -->
     <div class="bg-brand-900 text-white text-xs py-2 hidden md:block">
@@ -100,43 +101,49 @@
     </div>
 
     <!-- Navbar -->
-    <nav class="fixed top-0 md:top-8 w-full z-50 glass-nav h-20 flex items-center shadow-sm transition-all duration-300">
+    <nav class="fixed top-0 md:top-8 w-full z-50 glass-nav min-h-[5rem] py-2 flex items-center shadow-md transition-all duration-300">
         <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 flex justify-between items-center">
-            <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
-                <!-- UPDATED PATH: logo.png (Root folder) -->
-                <img src="logo.png" onerror="this.style.display='none'; document.getElementById('textLogo').classList.remove('hidden')" class="h-12 object-contain" alt="CRS Logo">
-                <div id="textLogo" class="hidden flex flex-col">
-                    <span class="font-heading text-2xl text-brand-900 leading-none tracking-tight">CRS <span class="text-brand-500">AIRCON</span></span>
-                    <span class="text-[10px] font-bold text-gray-400 tracking-widest uppercase">Tamil Nadu</span>
+            
+            <!-- BRANDING SECTION (UPDATED) -->
+            <div class="flex items-center gap-3 md:gap-5 cursor-pointer" onclick="window.scrollTo(0,0)">
+                <!-- Logo Image (Increased Size) -->
+                <img src="logo.png" class="h-14 md:h-20 w-auto object-contain" alt="CRS Logo">
+                
+                <!-- Logo Text (Red & Times New Roman) -->
+                <div class="flex flex-col justify-center">
+                    <span class="text-2xl md:text-4xl font-bold text-red-700 leading-none font-serif tracking-tight">CRS AIRCON</span>
+                    <span class="text-[10px] md:text-xs font-bold text-gray-500 tracking-[0.3em] uppercase mt-1 md:mt-0 ml-1">Tamil Nadu</span>
                 </div>
             </div>
 
-            <div class="hidden md:flex items-center gap-8 font-medium text-gray-600">
-                <a href="#about" class="hover:text-brand-600 transition">About</a>
-                <a href="#competitor-check" class="hover:text-brand-600 transition">Why Us?</a>
-                <a href="#products" class="hover:text-brand-600 transition">Catalogue</a>
-                <a href="#amc" class="hover:text-brand-600 transition text-brand-600 font-bold">AMC Plans</a>
-                <a href="#contact" class="px-6 py-2 bg-brand-600 text-white rounded-full hover:bg-brand-700 shadow-lg transition transform hover:-translate-y-0.5">Contact Us</a>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8 font-medium text-gray-700">
+                <a href="#about" class="hover:text-red-700 transition">About</a>
+                <a href="#competitor-check" class="hover:text-red-700 transition">Why Us?</a>
+                <a href="#products" class="hover:text-red-700 transition">Catalogue</a>
+                <a href="#amc" class="hover:text-red-700 transition text-brand-600 font-bold">AMC Plans</a>
+                <a href="#contact" class="px-6 py-2 bg-red-700 text-white rounded-full hover:bg-red-800 shadow-lg transition transform hover:-translate-y-0.5 font-bold">Contact Us</a>
             </div>
 
+            <!-- Mobile Menu Toggle -->
             <button class="md:hidden text-gray-800" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">
                 <i data-lucide="menu" class="w-8 h-8"></i>
             </button>
         </div>
         
-        <!-- Mobile Menu -->
-        <div id="mobileMenu" class="hidden absolute top-20 left-0 w-full bg-white shadow-xl border-t">
+        <!-- Mobile Menu Panel -->
+        <div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white shadow-xl border-t">
             <div class="flex flex-col p-4 gap-4 font-medium">
                 <a href="#about" class="block p-2 text-gray-700 border-b border-gray-100">About</a>
                 <a href="#products" class="block p-2 text-gray-700 border-b border-gray-100">Catalogue</a>
                 <a href="#amc" class="block p-2 text-gray-700 border-b border-gray-100">AMC Plans</a>
-                <a href="#contact" class="block p-2 font-bold text-brand-600">Locate Us</a>
+                <a href="#contact" class="block p-2 font-bold text-red-700">Locate Us</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Slideshow -->
-    <section class="relative pt-20 md:pt-28 h-[650px] bg-gray-900 overflow-hidden group">
+    <section class="relative pt-24 md:pt-32 h-[650px] bg-gray-900 overflow-hidden group">
         <!-- Slide 1 -->
         <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-100 z-10">
             <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069" class="w-full h-full object-cover opacity-50" alt="AC Background">
@@ -207,7 +214,7 @@
         </div>
     </section>
 
-    <!-- Free Site Visit Strip (Lead Gen) -->
+    <!-- Free Site Visit Strip -->
     <section class="mt-12 bg-gray-50 border-y border-gray-200 py-4">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-3">
@@ -225,13 +232,13 @@
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div class="relative">
                 <div class="aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-2xl relative">
-                    <!-- Path: assets/shop.jpg (Create 'assets' folder for this) -->
-                    <img src="assets/shop.jpg" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" alt="CRS Showroom Valasaravakkam">
+                    <!-- Path: shop.jpg -->
+                    <img src="shop.jpg" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" alt="CRS Showroom Valasaravakkam">
                     
-                    <!-- Fallback if shop.jpg is missing -->
+                    <!-- Fallback -->
                     <div class="hidden absolute inset-0 flex-col items-center justify-center text-gray-400 bg-gray-100">
                         <i data-lucide="store" class="w-16 h-16 mb-2"></i>
-                        <span>Add 'assets/shop.jpg' to view image</span>
+                        <span>Add 'shop.jpg' to GitHub</span>
                     </div>
                 </div>
             </div>
