@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Advanced SEO Tags -->
+    <meta name="description" content="CRS Aircon - No.1 Authorized AC Dealer in Tamil Nadu. 25+ Years Experience. Sales & Service for Blue Star, Daikin, Voltas, Mitsubishi. 24hr Installation in Chennai & Madurai.">
+    <meta name="keywords" content="AC Dealer Valasaravakkam, AC Installation Chennai, Blue Star Dealer Tamil Nadu, Daikin AC Price, Voltas Service Center, AC AMC Plans">
+    <meta property="og:title" content="CRS Aircon | Authorized Sales & Service | Tamil Nadu">
+    <meta property="og:description" content="Get the best exchange offers and 24hr installation. Authorized dealer for 10+ major brands.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069">
+    
+    <title>CRS Aircon | Authorized AC Dealer & Service | Tamil Nadu</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                        heading: ['Oswald', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            500: '#0ea5e9', // Sky
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e', // Navy
+                        },
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #F8FAFC; }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .whatsapp-float {
+            position: fixed; bottom: 90px; right: 20px; z-index: 40; /* Raised for mobile bar */
+            background: #25d366; color: white; width: 60px; height: 60px;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); transition: transform 0.3s;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); }
+
+        @media(min-width: 768px) {
+            .whatsapp-float { bottom: 30px; right: 30px; }
+        }
+        
+        .carousel-overlay {
+            background: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 100%);
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased pb-16 md:pb-0"> <!-- Padding bottom for mobile bar -->
+
+    <!-- Top Bar (Trust Signal) -->
+    <div class="bg-brand-900 text-white text-xs py-2 hidden md:block">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex gap-4">
+                <span><i data-lucide="map-pin" class="w-3 h-3 inline mr-1"></i> Serving Tamil Nadu since 2000</span>
+                <span><i data-lucide="phone" class="w-3 h-3 inline mr-1"></i> +91 98400 73436</span>
+            </div>
+            <div class="flex gap-4 font-bold text-yellow-400">
+                <span>⭐ 4.9/5 Google Rating</span>
+                <span>⭐ 5000+ Happy Homes</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 md:top-8 w-full z-50 glass-nav h-20 flex items-center shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 flex justify-between items-center">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
+                <img src="logo.png" onerror="this.style.display='none'; document.getElementById('textLogo').classList.remove('hidden')" class="h-12 object-contain" alt="CRS Logo">
+                <div id="textLogo" class="hidden flex flex-col">
+                    <span class="font-heading text-2xl text-brand-900 leading-none tracking-tight">CRS <span class="text-brand-500">AIRCON</span></span>
+                    <span class="text-[10px] font-bold text-gray-400 tracking-widest uppercase">Tamil Nadu</span>
+                </div>
+            </div>
+
+            <div class="hidden md:flex items-center gap-8 font-medium text-gray-600">
+                <a href="#about" class="hover:text-brand-600 transition">About</a>
+                <a href="#competitor-check" class="hover:text-brand-600 transition">Why Us?</a>
+                <a href="#products" class="hover:text-brand-600 transition">Catalogue</a>
+                <a href="#amc" class="hover:text-brand-600 transition text-brand-600 font-bold">AMC Plans</a>
+                <a href="#contact" class="px-6 py-2 bg-brand-600 text-white rounded-full hover:bg-brand-700 shadow-lg transition transform hover:-translate-y-0.5">Contact Us</a>
+            </div>
+
+            <button class="md:hidden text-gray-800" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden absolute top-20 left-0 w-full bg-white shadow-xl border-t">
+            <div class="flex flex-col p-4 gap-4 font-medium">
+                <a href="#about" class="block p-2 text-gray-700 border-b border-gray-100">About</a>
+                <a href="#products" class="block p-2 text-gray-700 border-b border-gray-100">Catalogue</a>
+                <a href="#amc" class="block p-2 text-gray-700 border-b border-gray-100">AMC Plans</a>
+                <a href="#contact" class="block p-2 font-bold text-brand-600">Locate Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slideshow -->
+    <section class="relative pt-20 md:pt-28 h-[650px] bg-gray-900 overflow-hidden group">
+        <!-- Slide 1 -->
+        <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-100 z-10">
+            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069" class="w-full h-full object-cover opacity-50" alt="AC Background">
+            <div class="absolute inset-0 carousel-overlay"></div>
+            <div class="absolute inset-0 flex items-center">
+                <div class="max-w-7xl mx-auto px-6 w-full">
+                    <div class="max-w-3xl animate-float">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 bg-brand-500/20 text-brand-200 border border-brand-500/50 rounded-full text-xs font-bold tracking-wider mb-4">
+                            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> AUTHORIZED DEALER
+                        </div>
+                        <h1 class="text-5xl md:text-7xl font-display font-bold text-white leading-tight mb-6">
+                            25 Years of Trust. <br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-brand-500">100% Original Brands.</span>
+                        </h1>
+                        <p class="text-xl text-gray-300 mb-8 border-l-4 border-brand-500 pl-4">
+                            Authorized Sales, Service & Spares. Serving homes and offices across Tamil Nadu since 2000.
+                        </p>
+                        <a href="#products" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-brand-900 rounded-lg font-bold hover:bg-gray-100 transition shadow-xl">
+                            Find Your AC <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Offer -->
+        <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0 z-0">
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2000" class="w-full h-full object-cover opacity-40" alt="Offer BG">
+            <div class="absolute inset-0 bg-gradient-to-r from-red-900/90 to-black/80"></div>
+            <div class="absolute inset-0 flex items-center justify-center text-center">
+                <div class="max-w-3xl px-4">
+                    <div class="inline-block bg-red-600 text-white px-4 py-1 rounded font-bold mb-4 animate-bounce">MEGA EXCHANGE OFFER</div>
+                    <h2 class="text-5xl md:text-7xl font-heading font-bold text-white mb-4 uppercase italic">Don't Repair. Replace.</h2>
+                    <p class="text-2xl text-gray-200 mb-8">Get Best Exchange Value for your old AC + Free Installation on select models.</p>
+                    <a href="https://wa.me/919840073436?text=I%20want%20to%20exchange%20my%20old%20AC" target="_blank" class="px-8 py-4 bg-yellow-400 text-black rounded-lg font-bold hover:bg-yellow-300 transition uppercase tracking-wide">
+                        Check Value via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 text-white/50 hover:text-white z-20"><i data-lucide="chevron-right" class="w-12 h-12"></i></button>
+    </section>
+
+    <!-- USP Tiles -->
+    <section class="relative z-20 -mt-16 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white p-6 rounded-xl shadow-xl border-b-4 border-brand-500 flex flex-col items-center text-center hover:transform hover:-translate-y-1 transition">
+                <div class="bg-brand-50 p-3 rounded-full mb-3"><i data-lucide="award" class="w-6 h-6 text-brand-600"></i></div>
+                <h3 class="font-bold text-gray-900 text-lg">25+ Years</h3>
+                <p class="text-xs text-gray-500">Experience in Tamil Nadu</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-xl border-b-4 border-brand-500 flex flex-col items-center text-center hover:transform hover:-translate-y-1 transition">
+                <div class="bg-brand-50 p-3 rounded-full mb-3"><i data-lucide="shield-check" class="w-6 h-6 text-brand-600"></i></div>
+                <h3 class="font-bold text-gray-900 text-lg">100% Original</h3>
+                <p class="text-xs text-gray-500">Authorized Dealer Warranty</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-xl border-b-4 border-brand-500 flex flex-col items-center text-center hover:transform hover:-translate-y-1 transition">
+                <div class="bg-brand-50 p-3 rounded-full mb-3"><i data-lucide="clock" class="w-6 h-6 text-brand-600"></i></div>
+                <h3 class="font-bold text-gray-900 text-lg">24hr Install</h3>
+                <p class="text-xs text-gray-500">Express Setup Guarantee</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-xl border-b-4 border-brand-500 flex flex-col items-center text-center hover:transform hover:-translate-y-1 transition">
+                <div class="bg-brand-50 p-3 rounded-full mb-3"><i data-lucide="phone-call" class="w-6 h-6 text-brand-600"></i></div>
+                <h3 class="font-bold text-gray-900 text-lg">24/7 Support</h3>
+                <p class="text-xs text-gray-500">We Never Sleep</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Site Visit Strip (Lead Gen) -->
+    <section class="mt-12 bg-gray-50 border-y border-gray-200 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <div class="bg-green-100 p-2 rounded-full animate-pulse"><i data-lucide="ruler" class="w-5 h-5 text-green-700"></i></div>
+                <p class="font-medium text-gray-700">Unsure about tonnage? <span class="text-gray-500 text-sm hidden sm:inline">Getting the wrong size increases electricity bills.</span></p>
+            </div>
+            <a href="https://wa.me/919840073436?text=I%20want%20to%20book%20a%20free%20site%20visit" target="_blank" class="px-6 py-2 bg-white border border-green-500 text-green-700 font-bold rounded-lg hover:bg-green-50 transition text-sm uppercase tracking-wide">
+                Book Free Site Visit
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <div class="aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-2xl relative">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-gray-400 bg-gray-100">
+                        <i data-lucide="store" class="w-16 h-16 mb-2"></i>
+                        <span>Shop Front / Team Photo</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-brand-600 font-bold uppercase tracking-wider mb-2">Our Legacy</h4>
+                <h2 class="text-4xl font-display font-bold text-gray-900 mb-6">Why Tamil Nadu Trusts CRS.</h2>
+                <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                    Buying an AC is easy. Getting it installed perfectly and maintained for 10 years is hard. 
+                    That's where we come in. Unlike online apps that send random technicians, CRS Aircon has its own 
+                    trained fleet. We don't just sell boxes; we sell <strong>Climate Control Solutions</strong>.
+                </p>
+                <div class="p-4 bg-brand-50 border-l-4 border-brand-600 rounded-r-lg">
+                    <p class="font-bold text-brand-900">"We are available 24/7. When your AC stops working in May heat, Amazon won't answer the phone. We will."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPETITOR CRUSHER -->
+    <section id="competitor-check" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-display font-bold text-gray-900">The Online Trap vs. The CRS Promise</h2>
+                <p class="text-gray-500 mt-2">Don't be fooled by "Low Prices" that cost you more later.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-0 md:gap-8 relative">
+                <!-- Competitor -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm opacity-80 hover:opacity-100 transition relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-red-500"></div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="bg-red-100 p-3 rounded-full"><i data-lucide="shopping-cart" class="w-8 h-8 text-red-600"></i></div>
+                        <h3 class="text-2xl font-bold text-gray-700">Online Apps / Big Stores</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-gray-600"><i data-lucide="x-circle" class="w-5 h-5 text-red-500 shrink-0 mt-1"></i> <span><strong>3rd Party Installers:</strong> Random technicians.</span></li>
+                        <li class="flex items-start gap-3 text-gray-600"><i data-lucide="x-circle" class="w-5 h-5 text-red-500 shrink-0 mt-1"></i> <span><strong>Hidden Costs:</strong> Extra for stand/copper.</span></li>
+                        <li class="flex items-start gap-3 text-gray-600"><i data-lucide="x-circle" class="w-5 h-5 text-red-500 shrink-0 mt-1"></i> <span><strong>No Support:</strong> 48-72hr wait for repairs.</span></li>
+                    </ul>
+                </div>
+
+                <!-- CRS -->
+                <div class="bg-white p-8 rounded-2xl border-2 border-brand-500 shadow-2xl relative overflow-hidden transform md:-translate-y-4 z-10">
+                    <div class="absolute top-0 right-0 bg-brand-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">WINNER</div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="bg-brand-100 p-3 rounded-full"><i data-lucide="check-circle-2" class="w-8 h-8 text-brand-600"></i></div>
+                        <h3 class="text-2xl font-bold text-brand-900">CRS Aircon</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-gray-700"><i data-lucide="check" class="w-5 h-5 text-green-500 shrink-0 font-bold mt-1"></i> <span><strong>In-House Experts:</strong> Our own staff.</span></li>
+                        <li class="flex items-start gap-3 text-gray-700"><i data-lucide="check" class="w-5 h-5 text-green-500 shrink-0 font-bold mt-1"></i> <span><strong>Site Visit:</strong> We measure before you buy.</span></li>
+                        <li class="flex items-start gap-3 text-gray-700"><i data-lucide="check" class="w-5 h-5 text-green-500 shrink-0 font-bold mt-1"></i> <span><strong>24/7 Response:</strong> Direct mobile access.</span></li>
+                    </ul>
+                    <div class="mt-8 pt-6 border-t border-gray-100 text-center">
+                        <p class="text-brand-600 font-bold text-sm">Join 5000+ Happy Families in Tamil Nadu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="py-12 bg-white border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+             <div class="flex flex-wrap justify-center gap-10 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <img src="https://logo.clearbit.com/bluestarindia.com" class="h-12 object-contain brand-logo" alt="Blue Star">
+                <img src="https://logo.clearbit.com/daikin.com" class="h-10 object-contain brand-logo" alt="Daikin">
+                <img src="https://logo.clearbit.com/voltas.com" class="h-10 object-contain brand-logo" alt="Voltas">
+                <img src="https://logo.clearbit.com/carrier.com" class="h-12 object-contain brand-logo" alt="Carrier">
+                <img src="https://logo.clearbit.com/mitsubishielectric.com" class="h-8 object-contain brand-logo" alt="Mitsubishi">
+                <img src="https://logo.clearbit.com/godrej.com" class="h-10 object-contain brand-logo" alt="Godrej">
+                <img src="https://logo.clearbit.com/jci-hitachi.in" class="h-12 object-contain brand-logo" alt="Hitachi">
+                <img src="https://logo.clearbit.com/ogeneral.com" class="h-10 object-contain brand-logo" alt="O General">
+            </div>
+        </div>
+    </section>
+
+    <!-- Money Saver (Piggy Bank) -->
+    <section id="savings" class="py-24 bg-brand-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-brand-800 skew-x-12 opacity-50"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="bg-yellow-400 text-black px-4 py-1 rounded font-bold text-sm uppercase animate-pulse">Smart Investment</span>
+                <h2 class="text-4xl md:text-5xl font-display font-bold mt-4 mb-6">Stop Burning Money.</h2>
+                <p class="text-brand-200 text-lg mb-8">Switching to Inverter technology saves you up to ₹45,000 in 5 years. It pays for itself.</p>
+                <div class="bg-white/10 p-6 rounded-xl border border-white/20">
+                     <div class="flex justify-between items-end mb-2"><span class="text-sm">Old Non-Inverter Bill</span> <span class="text-xl font-bold text-red-400">₹4,500</span></div>
+                     <div class="w-full bg-gray-700 h-2 rounded-full mb-6"><div class="bg-red-500 h-2 rounded-full w-full"></div></div>
+                     <div class="flex justify-between items-end mb-2"><span class="text-sm">Inverter AC Bill</span> <span class="text-xl font-bold text-green-400">₹2,800</span></div>
+                     <div class="w-full bg-gray-700 h-2 rounded-full"><div class="bg-green-500 h-2 rounded-full w-[60%]"></div></div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                 <div class="relative w-64 h-64 bg-white/5 rounded-full flex items-center justify-center animate-float">
+                    <i data-lucide="piggy-bank" class="w-32 h-32 text-pink-400"></i>
+                    <div class="absolute -top-4 -right-4 bg-green-500 text-white p-3 rounded-full font-bold shadow-lg shadow-green-500/50">Save ₹45k</div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Impact -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-gray-900">The "Hidden" Life of Your AC</h2>
+                <p class="text-gray-500 mt-2">Why 90% of AC failures are due to bad installation, not bad machines.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Bad Install -->
+                <div class="p-8 bg-red-50 rounded-2xl border border-red-100 opacity-75 grayscale hover:grayscale-0 transition duration-500">
+                    <h3 class="text-2xl font-bold text-red-800 mb-4 flex items-center gap-2"><i data-lucide="alert-triangle" class="w-6 h-6"></i> Standard Install</h3>
+                    <div class="space-y-6">
+                        <div><div class="flex justify-between text-xs font-bold mb-1"><span>Cooling Efficiency</span> <span class="text-red-600">60%</span></div><div class="w-full bg-red-200 h-2 rounded-full"><div class="bg-red-500 h-2 rounded-full w-[60%]"></div></div></div>
+                        <div><div class="flex justify-between text-xs font-bold mb-1"><span>Lifespan</span> <span class="text-red-600">3-4 Years</span></div><div class="w-full bg-red-200 h-2 rounded-full"><div class="bg-red-500 h-2 rounded-full w-[40%]"></div></div></div>
+                    </div>
+                </div>
+                <!-- CRS Install -->
+                <div class="p-8 bg-green-50 rounded-2xl border border-green-100 shadow-xl scale-105 transform">
+                    <h3 class="text-2xl font-bold text-green-800 mb-4 flex items-center gap-2"><i data-lucide="check-circle" class="w-6 h-6"></i> The CRS Standard</h3>
+                    <div class="space-y-6">
+                        <div><div class="flex justify-between text-xs font-bold mb-1"><span>Cooling Efficiency</span> <span class="text-green-600">100%</span></div><div class="w-full bg-green-200 h-2 rounded-full"><div class="bg-green-500 h-2 rounded-full w-[100%]"></div></div></div>
+                        <div><div class="flex justify-between text-xs font-bold mb-1"><span>Lifespan</span> <span class="text-green-600">10+ Years</span></div><div class="w-full bg-green-200 h-2 rounded-full"><div class="bg-green-500 h-2 rounded-full w-[95%]"></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalogue (Lead Gen) -->
+    <section id="products" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-display font-bold text-gray-900">2025 Best Sellers</h2>
+                <p class="text-gray-500 mt-2">Prices include GST. Click to get your custom offer.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-4 gap-8">
+                <div class="hidden lg:block space-y-6">
+                    <div class="bg-white p-5 rounded-xl shadow-sm">
+                        <h3 class="font-bold mb-4">Filter By Brand</h3>
+                        <div id="brand-filters" class="space-y-2 text-sm"></div>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm">
+                        <h3 class="font-bold mb-4">Technology</h3>
+                        <label class="flex items-center gap-2 mb-2"><input type="checkbox" onchange="toggleFilter('tech', 'Inverter')" class="rounded text-brand-600"> Inverter</label>
+                        <label class="flex items-center gap-2"><input type="checkbox" onchange="toggleFilter('tech', 'Fixed')" class="rounded text-brand-600"> Non-Inverter</label>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3">
+                    <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+                    <div class="text-center mt-10">
+                         <button id="loadMoreBtn" onclick="showAllProducts()" class="px-6 py-2 border border-gray-300 rounded-full text-sm font-bold text-gray-600 hover:bg-white transition hidden">View More Models</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AMC Banner -->
+    <section id="amc" class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="bg-gradient-to-r from-gray-900 to-brand-900 rounded-2xl p-8 md:p-12 text-white flex flex-col md:flex-row items-center justify-between shadow-2xl relative overflow-hidden">
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
+                <div class="relative z-10">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i data-lucide="shield" class="w-8 h-8 text-yellow-400"></i>
+                        <h2 class="text-3xl font-display font-bold">CRS Protection Plan</h2>
+                    </div>
+                    <p class="text-gray-300 max-w-lg">Don't let breakdowns ruin your sleep. Join our AMC program for priority service, free gas top-ups, and routine cleaning.</p>
+                </div>
+                <div class="mt-8 md:mt-0 relative z-10">
+                    <a href="https://wa.me/919840073436?text=Interested%20in%20AMC%20Plans" target="_blank" class="block bg-white text-brand-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition text-center">
+                        Get AMC Plans <br>
+                        <span class="text-xs font-normal">Starting @ ₹2500/yr</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horizontal Review Scroll -->
+    <section class="py-20 bg-gray-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 mb-8 text-center">
+            <h2 class="text-3xl font-bold">What Your Neighbors Say</h2>
+            <div class="flex justify-center gap-1 mt-2">
+                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+            </div>
+        </div>
+        
+        <div class="flex gap-6 overflow-x-auto px-6 pb-8 no-scrollbar snap-x">
+            <div class="min-w-[300px] md:min-w-[400px] bg-white p-6 rounded-xl shadow-sm border border-gray-100 snap-center">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-brand-100 rounded-full flex items-center justify-center font-bold text-brand-700">R</div>
+                    <div><h4 class="font-bold">Rajesh Kumar</h4><p class="text-xs text-gray-500">Valasaravakkam</p></div>
+                </div>
+                <p class="text-gray-600 italic">"Excellent service! Bought a Daikin 1.5 Ton. The installation team came within 4 hours. Better than online."</p>
+            </div>
+             <div class="min-w-[300px] md:min-w-[400px] bg-white p-6 rounded-xl shadow-sm border border-gray-100 snap-center">
+                <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center font-bold text-purple-700 mb-4">P</div>
+                <h4 class="font-bold">Priya Sundar</h4>
+                <p class="text-gray-600 italic mb-4">"Trustworthy dealer. Mr. Babu explained the difference between copper and aluminum condensers clearly."</p>
+            </div>
+             <div class="min-w-[300px] md:min-w-[400px] bg-white p-6 rounded-xl shadow-sm border border-gray-100 snap-center">
+                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center font-bold text-green-700 mb-4">A</div>
+                <h4 class="font-bold">Anand V.</h4>
+                <p class="text-gray-600 italic mb-4">"I have been using their AMC service for 5 years for my office ACs. Prompt response."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <section id="contact" class="bg-gray-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-display font-bold mb-6">Contact Us</h2>
+                <div class="space-y-6 text-gray-300">
+                    <div class="flex gap-4">
+                        <i data-lucide="map-pin" class="text-brand-500 mt-1"></i>
+                        <p>23, Kamakoti Nagar, West Kamakoti Nagar,<br>Valasaravakkam, Chennai, Tamil Nadu 600087</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <i data-lucide="phone" class="text-brand-500 mt-1"></i>
+                        <p class="text-xl font-bold text-white">+91 98400 73436</p>
+                    </div>
+                </div>
+            </div>
+            <div class="h-64 rounded-xl overflow-hidden bg-gray-800">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.110543597444!2d80.1656!3d13.0441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52610d44444445%3A0x0!2zMTPCsDAyJzM4LjgiTiA4MMKwMDknNTYuMiJF!5e0!3m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        
+        <!-- SEO Footer Keywords -->
+        <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-gray-800">
+            <p class="text-xs text-gray-500 text-center uppercase tracking-wide mb-4">Service Areas</p>
+            <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs text-gray-600">
+                <span>Valasaravakkam</span><span>Porur</span><span>Virugambakkam</span><span>Ramapuram</span><span>KK Nagar</span>
+                <span>Vadapalani</span><span>Ashok Nagar</span><span>Chennai</span><span>Madurai</span><span>Coimbatore</span><span>Trichy</span>
+            </div>
+            <div class="text-center text-gray-500 text-sm mt-8">
+                &copy; 2025 CRS Aircon. Designed for Growth.
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky Mobile Bottom Bar (Conversion Booster) -->
+    <div class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 z-50 md:hidden shadow-2xl">
+        <div class="grid grid-cols-2 h-16">
+            <a href="tel:+919840073436" class="flex flex-col items-center justify-center text-gray-700 hover:bg-gray-50 border-r border-gray-100">
+                <i data-lucide="phone" class="w-5 h-5 text-brand-600 mb-1"></i>
+                <span class="text-xs font-bold">Call Now</span>
+            </a>
+            <a href="https://wa.me/919840073436?text=Hi%20CRS,%20I%20am%20interested" target="_blank" class="flex flex-col items-center justify-center bg-green-500 text-white hover:bg-green-600">
+                <i data-lucide="message-circle" class="w-5 h-5 mb-1"></i>
+                <span class="text-xs font-bold">WhatsApp</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp (Desktop Only) -->
+    <a href="https://wa.me/919840073436?text=Hi%20CRS,%20I%20am%20interested%20in%20AC" target="_blank" class="whatsapp-float hidden md:flex">
+        <i data-lucide="message-circle" class="w-8 h-8"></i>
+    </a>
+
+    <script>
+        lucide.createIcons();
+
+        // Slideshow
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+        function nextSlide() {
+            slides[currentSlide].style.opacity = '0';
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].style.opacity = '1';
+        }
+        setInterval(nextSlide, 5000);
+
+        // Products
+        const products = [
+            { id: 1, brand: "Daikin", model: "MTKM50U", type: "Split", tech: "Inverter", star: 5, ton: 1.5 },
+            { id: 2, brand: "Blue Star", model: "IA518DLE", type: "Split", tech: "Inverter", star: 5, ton: 1.5 },
+            { id: 3, brand: "Voltas", model: "183V CZJ", type: "Split", tech: "Inverter", star: 3, ton: 1.5 },
+            { id: 4, brand: "Mitsubishi", model: "MSY-GR18VF", type: "Split", tech: "Inverter", star: 5, ton: 1.5 },
+            { id: 5, brand: "Hitachi", model: "Youshi 5100X", type: "Split", tech: "Inverter", star: 5, ton: 1.5 },
+            { id: 6, brand: "Carrier", model: "Emperia Xi", type: "Split", tech: "Inverter", star: 4, ton: 1.5 },
+            { id: 7, brand: "Godrej", model: "GIC 18TTC3", type: "Split", tech: "Inverter", star: 3, ton: 1.5 },
+            { id: 8, brand: "Voltas", model: "183 DZA", type: "Window", tech: "Fixed", star: 3, ton: 1.5 },
+            { id: 9, brand: "O General", model: "ASGG18CPTA", type: "Split", tech: "Inverter", star: 5, ton: 1.5 },
+        ];
+
+        let state = { brands: [], tech: [] };
+        let showAll = false;
+
+        function initApp() {
+            const brands = [...new Set(products.map(p => p.brand))].sort();
+            document.getElementById('brand-filters').innerHTML = brands.map(b => `
+                <label class="flex items-center gap-2 cursor-pointer text-sm text-gray-600 hover:text-brand-600">
+                    <input type="checkbox" onchange="toggleFilter('brands', '${b}')" class="rounded text-brand-600 focus:ring-brand-500"> ${b}
+                </label>
+            `).join('');
+            renderProducts();
+        }
+
+        function toggleFilter(cat, val) {
+            if (state[cat].includes(val)) state[cat] = state[cat].filter(i => i !== val);
+            else state[cat].push(val);
+            renderProducts();
+        }
+
+        function renderProducts() {
+            let filtered = products.filter(p => {
+                const b = state.brands.length === 0 || state.brands.includes(p.brand);
+                const t = state.tech.length === 0 || state.tech.includes(p.tech);
+                return b && t;
+            });
+
+            const btn = document.getElementById('loadMoreBtn');
+            if (!showAll && filtered.length > 6) {
+                btn.classList.remove('hidden');
+                filtered = filtered.slice(0, 6);
+            } else {
+                btn.classList.add('hidden');
+            }
+
+            const grid = document.getElementById('product-grid');
+            grid.innerHTML = filtered.map(p => `
+                <div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group flex flex-col relative overflow-hidden">
+                    ${p.tech === 'Inverter' ? '<span class="absolute top-2 right-2 bg-green-500 text-white text-[10px] font-bold px-2 py-1 rounded">INVERTER</span>' : ''}
+                    <div class="h-40 bg-gray-50 flex items-center justify-center p-4">
+                        <i data-lucide="snowflake" class="w-12 h-12 text-gray-300"></i>
+                    </div>
+                    <div class="p-5 flex-grow flex flex-col">
+                        <span class="text-xs font-bold text-brand-600 uppercase tracking-wide mb-1">${p.brand}</span>
+                        <h3 class="font-bold text-gray-900 text-lg mb-1">${p.model}</h3>
+                        <p class="text-xs text-gray-500 mb-4">${p.type} • ${p.ton} Ton • ${p.star} Star</p>
+                        <div class="mt-auto border-t border-gray-50 pt-3">
+                            <a href="https://wa.me/919840073436?text=What%20is%20the%20best%20price%20for%20${p.brand}%20${p.model}?" target="_blank" 
+                               class="w-full block text-center bg-brand-600 text-white text-sm font-bold py-2 rounded-lg hover:bg-brand-700 transition shadow-lg shadow-brand-500/30">
+                                Reveal Offer Price
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            lucide.createIcons();
+            
+            // Logo Fallback
+            document.querySelectorAll('.brand-logo').forEach(img => {
+                img.onerror = function() { this.style.display = 'none'; };
+            });
+        }
+
+        function showAllProducts() { showAll = true; renderProducts(); }
+        window.onload = initApp;
+    </script>
+</body>
+</html>
