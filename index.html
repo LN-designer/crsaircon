@@ -103,6 +103,7 @@
     <nav class="fixed top-0 md:top-8 w-full z-50 glass-nav h-20 flex items-center shadow-sm transition-all duration-300">
         <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 flex justify-between items-center">
             <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
+                <!-- UPDATED PATH: logo.png (Root folder) -->
                 <img src="logo.png" onerror="this.style.display='none'; document.getElementById('textLogo').classList.remove('hidden')" class="h-12 object-contain" alt="CRS Logo">
                 <div id="textLogo" class="hidden flex flex-col">
                     <span class="font-heading text-2xl text-brand-900 leading-none tracking-tight">CRS <span class="text-brand-500">AIRCON</span></span>
@@ -224,9 +225,13 @@
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div class="relative">
                 <div class="aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-2xl relative">
-                    <div class="absolute inset-0 flex flex-col items-center justify-center text-gray-400 bg-gray-100">
+                    <!-- Path: assets/shop.jpg (Create 'assets' folder for this) -->
+                    <img src="assets/shop.jpg" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" alt="CRS Showroom Valasaravakkam">
+                    
+                    <!-- Fallback if shop.jpg is missing -->
+                    <div class="hidden absolute inset-0 flex-col items-center justify-center text-gray-400 bg-gray-100">
                         <i data-lucide="store" class="w-16 h-16 mb-2"></i>
-                        <span>Shop Front / Team Photo</span>
+                        <span>Add 'assets/shop.jpg' to view image</span>
                     </div>
                 </div>
             </div>
