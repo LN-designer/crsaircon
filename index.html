@@ -113,7 +113,7 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
 /* TOPBAR */
 .topbar{background:var(--slate-dark);color:rgba(255,255,255,.55);font-size:.68rem;padding:.55rem 0;display:none}
 @media(min-width:769px){.topbar{display:block}}
-.topbar-inner{max-width:1300px;margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center}
+.topbar-inner{max-width:1536px;margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center}
 .topbar a,.topbar span{display:inline-flex;align-items:center;gap:.35rem;transition:color .3s}
 .topbar a:hover{color:#fff}
 .topbar i{color:var(--red);font-size:.55rem}
@@ -125,7 +125,7 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
 .nav.has-topbar{top:32px}
 .nav.stuck{background:rgba(255,255,255,.92);backdrop-filter:blur(20px);box-shadow:0 1px 16px rgba(12,26,46,.06);padding:.55rem 0}
 .nav.stuck.has-topbar{top:0}
-.nav-wrap{max-width:1300px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between}
+.nav-wrap{max-width:1536px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between}
 .nav-brand{display:flex;align-items:center;gap:.6rem}
 /* Updated Tagline Color */
 .nb-name{font-weight:800;font-size:1.05rem;letter-spacing:.8px; font-family: 'Times New Roman', Times, serif;}
@@ -148,7 +148,7 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
 .slide-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(15,23,42,.93),rgba(15,23,42,.6) 50%,rgba(15,23,42,.15))}
 .slide-overlay-center{background:linear-gradient(to bottom,rgba(15,23,42,.7),rgba(15,23,42,.85))}
 .slide-content{position:absolute;inset:0;display:flex;align-items:center}
-.slide-inner{max-width:1300px;margin:0 auto;padding:0 2rem;width:100%}
+.slide-inner{max-width:1536px;margin:0 auto;padding:0 2rem;width:100%}
 .hero-chip{display:inline-flex;align-items:center;gap:.45rem;padding:.3rem .4rem .3rem .8rem;border-radius:50px;background:rgba(186,230,253,.1);border:1px solid rgba(186,230,253,.15);margin-bottom:1.2rem;backdrop-filter:blur(8px)}
 .hero-chip .dot{width:7px;height:7px;border-radius:50%;background:#22d3ee;animation:pulse 2s ease-in-out infinite}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(34,211,238,.4)}50%{box-shadow:0 0 0 6px rgba(34,211,238,0)}}
@@ -168,7 +168,7 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
 
 /* STAT BAR */
 .stat-bar{background:var(--white);border-bottom:1px solid var(--border2);position:relative;z-index:15}
-.stat-row{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+.stat-row{max-width:1536px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
 .stat-item{padding:1.3rem 1rem;text-align:center;border-right:1px solid var(--border2);transition:background .3s;cursor:default}
 .stat-item:last-child{border-right:none}
 .stat-item:hover{background:var(--blue-light)}
@@ -191,12 +191,12 @@ section{padding:4.5rem 2rem}
 .sec-h{font-size:clamp(1.6rem,3vw,2.3rem);font-weight:800;line-height:1.15}
 .sec-h .i{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--red)}
 .sec-p{color:var(--text);font-size:.85rem;line-height:1.7;margin-top:.3rem;max-width:500px}
-.sec-header{text-align:center;max-width:600px;margin:0 auto 3rem}
+.sec-header{text-align:center;max-width:800px;margin:0 auto 3rem}
 .sec-header .sec-p{margin-left:auto;margin-right:auto}
 
 /* ABOUT */
 #about{background:var(--white)}
-.about-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1.1fr;gap:3.5rem;align-items:center}
+.about-grid{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:1fr 1.1fr;gap:4.5rem;align-items:center}
 .about-img-wrap{position:relative}
 .about-img-wrap::before{content:'';position:absolute;top:-8px;left:-8px;width:100%;height:100%;border:2px solid var(--blue-ultra);border-radius:var(--radius-lg);z-index:0}
 .about-img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius-lg);position:relative;z-index:1;box-shadow:var(--shadow-lg)}
@@ -211,8 +211,8 @@ section{padding:4.5rem 2rem}
 
 /* WHY CRS */
 #whycrs{background:var(--bg)}
-.compare-grid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
-.compare-card{padding:1.8rem;border-radius:var(--radius);border:1.5px solid var(--border2);background:var(--bg2)}
+.compare-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.compare-card{padding:2rem;border-radius:var(--radius);border:1.5px solid var(--border2);background:var(--bg2)}
 .compare-card.recommended{background:var(--white);border-color:rgba(192,39,45,.15);box-shadow:var(--shadow-md);position:relative}
 .compare-card.recommended::before{content:'RECOMMENDED';position:absolute;top:-.5rem;left:1.2rem;background:var(--red);color:#fff;font-size:.44rem;font-weight:700;letter-spacing:1.5px;padding:.18rem .5rem;border-radius:4px}
 .compare-card h3{font-size:.92rem;font-weight:700;color:var(--muted);margin-bottom:.8rem;display:flex;align-items:center;gap:.4rem}
@@ -224,7 +224,7 @@ section{padding:4.5rem 2rem}
 
 /* ENERGY SAVINGS */
 #savings{background:var(--slate-dark);color:#fff;position:relative;overflow:hidden}
-.savings-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.savings-grid{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
 .sbar-label{font-size:.52rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(148,163,184,.7);margin-bottom:.35rem}
 .sbar-track{width:100%;height:7px;border-radius:4px;background:rgba(255,255,255,.06);overflow:hidden}
 .sbar-fill{height:100%;border-radius:4px;width:0;transition:width 1.5s ease-out}
@@ -241,184 +241,197 @@ section{padding:4.5rem 2rem}
 
 /* PRODUCTS */
 #products{background:var(--white)}
-.products-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.products-grid{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
 .p-card{border-radius:var(--radius-lg);overflow:hidden;border:1.5px solid var(--border2);background:var(--white);transition:all .5s}
 .p-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:var(--red)}
-.p-card .p-img{height:200px;overflow:hidden;position:relative}
+.p-card .p-img{height:240px;overflow:hidden;position:relative}
 .p-card .p-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
 .p-card:hover .p-img img{transform:scale(1.06)}
 .p-img-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(15,23,42,.5),transparent 50%)}
 .p-img-tag{position:absolute;bottom:.7rem;left:.7rem;color:#fff;font-size:.58rem;font-weight:700;letter-spacing:1px;text-transform:uppercase}
-.p-body{padding:1.3rem}
-.p-body h3{font-size:1rem;font-weight:800;margin-bottom:.25rem}
-.p-body p{font-size:.72rem;color:var(--text);line-height:1.6}
-.copper{display:inline-flex;align-items:center;gap:.2rem;margin-top:.5rem;padding:.15rem .45rem;border-radius:50px;background:var(--amber-light);font-size:.44rem;font-weight:700;color:var(--amber);letter-spacing:1px;text-transform:uppercase}
-.p-card.wide{grid-column:span 2}.p-card.wide .p-img{height:220px}
+.p-body{padding:1.5rem}
+.p-body h3{font-size:1.1rem;font-weight:800;margin-bottom:.25rem}
+.p-body p{font-size:.8rem;color:var(--text);line-height:1.6}
+.copper{display:inline-flex;align-items:center;gap:.2rem;margin-top:.6rem;padding:.2rem .6rem;border-radius:50px;background:var(--amber-light);font-size:.5rem;font-weight:700;color:var(--amber);letter-spacing:1px;text-transform:uppercase}
+.p-card.wide{grid-column:span 2}.p-card.wide .p-img{height:280px}
 
 /* INSTALLATION */
 #installation{background:var(--bg)}
-.install-grid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
-.install-card{padding:1.8rem;border-radius:var(--radius);border:1.5px solid var(--border2);background:var(--white)}
+.install-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.install-card{padding:2rem;border-radius:var(--radius);border:1.5px solid var(--border2);background:var(--white)}
 .install-card.good{border-color:rgba(192,39,45,.15);box-shadow:var(--shadow-md)}
-.install-card h3{font-size:.88rem;font-weight:700;margin-bottom:.8rem;color:var(--muted);display:flex;align-items:center;gap:.35rem}
+.install-card h3{font-size:1rem;font-weight:700;margin-bottom:.8rem;color:var(--muted);display:flex;align-items:center;gap:.35rem}
 .install-card.good h3{color:var(--ink)}
-.install-bar-label{font-size:.68rem;display:flex;justify-content:space-between;margin-bottom:.25rem;color:var(--text)}
-.install-bar{height:5px;border-radius:3px;background:var(--bg3);overflow:hidden;margin-bottom:.5rem}
+.install-bar-label{font-size:.75rem;display:flex;justify-content:space-between;margin-bottom:.25rem;color:var(--text)}
+.install-bar{height:6px;border-radius:3px;background:var(--bg3);overflow:hidden;margin-bottom:.6rem}
 .install-bar-fill{height:100%;border-radius:3px}
-.install-note{font-size:.58rem;color:var(--muted);margin-top:.2rem}
+.install-note{font-size:.65rem;color:var(--muted);margin-top:.3rem}
 .install-note.bad{color:#ef4444}.install-note.good{color:var(--red)}
 
 /* AMC */
 #amc{background:linear-gradient(180deg,var(--blue-light),var(--bg))}
-.amc-layout{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
-.amc-card{background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:2.2rem;box-shadow:var(--shadow-xl);position:relative;overflow:hidden}
-.amc-card::before{content:'POPULAR';position:absolute;top:0;right:0;background:var(--red);color:#fff;font-size:.44rem;font-weight:700;letter-spacing:1.5px;padding:.25rem .7rem;border-radius:0 0 0 10px}
-.amc-card h3{font-size:1.2rem;font-weight:800;margin-bottom:.15rem}
-.amc-card .amc-sub{font-size:.72rem;color:var(--muted);margin-bottom:1.2rem}
-.amc-price{margin-bottom:1.2rem}
-.amc-price .cur{font-size:.85rem;color:var(--red);vertical-align:top;font-weight:700}
-.amc-price .val{font-family:var(--serif);font-size:3.2rem;font-weight:700;color:var(--ink)}
-.amc-price .per{font-size:.68rem;color:var(--muted)}
-.amc-features{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1.2rem}
-.amc-feat{display:flex;align-items:center;gap:.45rem;font-size:.72rem;color:var(--text)}
-.amc-feat i{color:var(--green);font-size:.55rem}
-.amc-buy{display:block;width:100%;padding:.7rem;border-radius:10px;background:var(--slate-dark);color:#fff;text-align:center;font-weight:700;font-size:.78rem;transition:all .3s;border:none;cursor:pointer;font-family:var(--sans)}
+.amc-layout{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start}
+.amc-card{background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:2.5rem;box-shadow:var(--shadow-xl);position:relative;overflow:hidden}
+.amc-card::before{content:'POPULAR';position:absolute;top:0;right:0;background:var(--red);color:#fff;font-size:.5rem;font-weight:700;letter-spacing:1.5px;padding:.35rem 1rem;border-radius:0 0 0 12px}
+.amc-card h3{font-size:1.4rem;font-weight:800;margin-bottom:.25rem}
+.amc-card .amc-sub{font-size:.8rem;color:var(--muted);margin-bottom:1.5rem}
+.amc-price{margin-bottom:1.5rem}
+.amc-price .cur{font-size:1rem;color:var(--red);vertical-align:top;font-weight:700}
+.amc-price .val{font-family:var(--serif);font-size:4rem;font-weight:700;color:var(--ink)}
+.amc-price .per{font-size:.8rem;color:var(--muted)}
+.amc-features{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.5rem}
+.amc-feat{display:flex;align-items:center;gap:.55rem;font-size:.8rem;color:var(--text)}
+.amc-feat i{color:var(--green);font-size:.65rem}
+.amc-buy{display:block;width:100%;padding:.8rem;border-radius:10px;background:var(--slate-dark);color:#fff;text-align:center;font-weight:700;font-size:.85rem;transition:all .3s;border:none;cursor:pointer;font-family:var(--sans)}
 .amc-buy:hover{background:var(--ink);transform:translateY(-2px)}
-.amc-info h4{font-size:1rem;font-weight:800;margin-bottom:.5rem}
-.amc-info p{font-size:.78rem;color:var(--text);line-height:1.75;margin-bottom:.8rem}
-.amc-trust{display:flex;align-items:center;gap:.6rem;padding:.8rem;background:var(--white);border:1.5px solid var(--border2);border-radius:var(--radius)}
-.amc-trust-icon{width:36px;height:36px;border-radius:9px;background:var(--blue-light);display:flex;align-items:center;justify-content:center;color:var(--red);font-size:.8rem;flex-shrink:0}
-.att{font-weight:700;font-size:.78rem}.ats{font-size:.52rem;color:var(--muted)}
+.amc-info h4{font-size:1.2rem;font-weight:800;margin-bottom:.6rem}
+.amc-info p{font-size:.85rem;color:var(--text);line-height:1.75;margin-bottom:.8rem}
+.amc-trust{display:flex;align-items:center;gap:.8rem;padding:1rem;background:var(--white);border:1.5px solid var(--border2);border-radius:var(--radius)}
+.amc-trust-icon{width:42px;height:42px;border-radius:10px;background:var(--blue-light);display:flex;align-items:center;justify-content:center;color:var(--red);font-size:1rem;flex-shrink:0}
+.att{font-weight:700;font-size:.85rem;margin-bottom:0.2rem;}.ats{font-size:.65rem;color:var(--muted)}
 
 /* HORIZONTAL REVIEWS (UPDATED) */
 #reviews{background:var(--bg)}
-.rev-scroller-wrap {position: relative; max-width: 1200px; margin: 0 auto; overflow: hidden;}
+.rev-scroller-wrap {position: relative; max-width: 1440px; margin: 0 auto; overflow: hidden;}
 .rev-scroller {display: flex; gap: 1.5rem; overflow-x: auto; scroll-snap-type: x mandatory; padding: 1rem 0 2rem 0; scrollbar-width: none; -ms-overflow-style: none;}
 .rev-scroller::-webkit-scrollbar {display: none;}
-.rev-card {background: var(--white); border: 1.5px solid var(--border2); border-radius: var(--radius); padding: 1.8rem; transition: all .4s; min-width: 320px; max-width: 380px; flex: 0 0 auto; scroll-snap-align: center; box-shadow: var(--shadow-sm);}
+.rev-card {background: var(--white); border: 1.5px solid var(--border2); border-radius: var(--radius); padding: 1.8rem; transition: all .4s; min-width: 340px; max-width: 400px; flex: 0 0 auto; scroll-snap-align: center; box-shadow: var(--shadow-sm);}
 .rev-card:hover {border-color: var(--red); transform: translateY(-3px); box-shadow: var(--shadow-md);}
-.rv-stars {color: var(--amber); font-size: .7rem; letter-spacing: 2px; margin-bottom: .6rem;}
-.rv-text {font-size: .8rem; color: var(--text); line-height: 1.7; font-style: italic; margin-bottom: 1rem;}
-.rv-who {display: flex; align-items: center; gap: .6rem; border-top: 1px solid var(--border2); padding-top: 1rem;}
-.rv-av {width: 36px; height: 36px; border-radius: 50%; background: var(--red); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: .65rem; color: #fff; flex-shrink: 0;}
-.rv-name {font-weight: 700; font-size: .8rem; color: var(--ink);}
-.rv-loc {font-size: .55rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px;}
+.rv-stars {color: var(--amber); font-size: .8rem; letter-spacing: 2px; margin-bottom: .6rem;}
+.rv-text {font-size: .85rem; color: var(--text); line-height: 1.7; font-style: italic; margin-bottom: 1.2rem;}
+.rv-who {display: flex; align-items: center; gap: .8rem; border-top: 1px solid var(--border2); padding-top: 1.2rem;}
+.rv-av {width: 40px; height: 40px; border-radius: 50%; background: var(--red); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: .75rem; color: #fff; flex-shrink: 0;}
+.rv-name {font-weight: 700; font-size: .9rem; color: var(--ink);}
+.rv-loc {font-size: .65rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px;}
 
 /* REVIEW LINKS */
-.review-links { display: flex; justify-content: center; gap: 1.2rem; margin-top: 1rem; flex-wrap: wrap; }
-.btn-google, .btn-justdial { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.7rem 1.4rem; border-radius: 8px; font-weight: 700; font-size: 0.8rem; transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; background: var(--white); }
+.review-links { display: flex; justify-content: center; gap: 1.2rem; margin-top: 1.5rem; flex-wrap: wrap; }
+.btn-google, .btn-justdial { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.8rem 1.6rem; border-radius: 8px; font-weight: 700; font-size: 0.85rem; transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; background: var(--white); }
 .btn-google { color: #333; border: 1.5px solid var(--border2); box-shadow: var(--shadow-sm); }
 .btn-google:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: #ea4335; }
 .btn-justdial { color: #fff; background: #f97316; border: 1.5px solid #ea580c; box-shadow: 0 2px 8px rgba(249,115,22,0.2); }
 .btn-justdial:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(249,115,22,0.3); background: #ea580c; }
-.btn-google i { color: #ea4335; font-size: 1rem; }
-.btn-justdial i { color: #fff; font-size: 1rem; }
+.btn-google i { color: #ea4335; font-size: 1.1rem; }
+.btn-justdial i { color: #fff; font-size: 1.1rem; }
 
 /* CONTACT UNIFIED (MAP COMBINED) */
 #contact{background:var(--white)}
-.contact-unified{max-width:1100px;margin:0 auto}
+.contact-unified{max-width:1300px;margin:0 auto}
 .cu-top{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:var(--radius-lg);overflow:hidden;border:1.5px solid var(--border);background:var(--white);box-shadow:var(--shadow-lg)}
-.cu-info{padding:2.5rem;display:flex;flex-direction:column;border-right:1px solid var(--border2);background:var(--bg)}
-.cu-info h3{font-size:1.3rem;font-weight:800;margin-bottom:1.5rem;color:var(--ink)}
-.ci{display:flex;gap:.6rem;margin-bottom:1rem; align-items:flex-start;}
-.ci-ic{width:36px;height:36px;border-radius:8px;background:var(--white);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:.8rem;color:var(--red);flex-shrink:0;box-shadow:var(--shadow-sm)}
-.ci-lbl{font-size:.5rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:.1rem}
-.ci-v{font-size:.82rem;font-weight:600;color:var(--ink);line-height:1.4}
+.cu-info{padding:3rem;display:flex;flex-direction:column;border-right:1px solid var(--border2);background:var(--bg)}
+.cu-info h3{font-size:1.4rem;font-weight:800;margin-bottom:1.5rem;color:var(--ink)}
+.ci{display:flex;gap:.8rem;margin-bottom:1.2rem; align-items:flex-start;}
+.ci-ic{width:42px;height:42px;border-radius:8px;background:var(--white);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:.9rem;color:var(--red);flex-shrink:0;box-shadow:var(--shadow-sm)}
+.ci-lbl{font-size:.55rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:.2rem}
+.ci-v{font-size:.9rem;font-weight:600;color:var(--ink);line-height:1.4}
 .ci-v a{transition:color .3s}.ci-v a:hover{color:var(--red)}
-.cu-map-integrated{margin-top:auto;padding-top:1.5rem; height:240px; border-radius: 12px; overflow:hidden;}
+.cu-map-integrated{margin-top:auto;padding-top:1.5rem; height:280px; border-radius: 12px; overflow:hidden;}
 .cu-map-integrated iframe{width:100%;height:100%;border:0;border-radius:12px; border: 1px solid var(--border2);}
 
 /* FORM */
-.cu-form{padding:2.5rem;background:var(--white)}
-.cu-form h3{font-size:1.3rem;font-weight:800;margin-bottom:.3rem;color:var(--ink)}
-.ef-sub{font-size:.75rem;color:var(--muted);margin-bottom:1.8rem}
-.ef-row{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-bottom:.8rem}
-.ef-field{display:flex;flex-direction:column;gap:.25rem}
-.ef-field label{font-size:.55rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
-.ef-field input,.ef-field select,.ef-field textarea{width:100%;padding:.7rem .8rem;border-radius:8px;border:1.5px solid var(--border);background:var(--bg);font-family:var(--sans);font-size:.8rem;color:var(--ink);outline:none;transition:all .3s}
+.cu-form{padding:3rem;background:var(--white)}
+.cu-form h3{font-size:1.4rem;font-weight:800;margin-bottom:.4rem;color:var(--ink)}
+.ef-sub{font-size:.85rem;color:var(--muted);margin-bottom:2rem}
+.ef-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.ef-field{display:flex;flex-direction:column;gap:.35rem}
+.ef-field label{font-size:.6rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+.ef-field input,.ef-field select,.ef-field textarea{width:100%;padding:.8rem .9rem;border-radius:8px;border:1.5px solid var(--border);background:var(--bg);font-family:var(--sans);font-size:.85rem;color:var(--ink);outline:none;transition:all .3s}
 .ef-field input:focus,.ef-field select:focus,.ef-field textarea:focus{border-color:var(--red);background:var(--white);box-shadow:0 0 0 3px var(--red-light)}
-.ef-field textarea{resize:vertical;min-height:90px}
+.ef-field textarea{resize:vertical;min-height:100px}
 .ef-full{grid-column:1/-1}
 .ef-submit{margin-top:1.5rem}
-.ef-submit button{width:100%;padding:.9rem;border-radius:8px;background:var(--red);color:#fff;font-weight:700;font-size:.85rem;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.4rem;transition:all .3s;font-family:var(--sans)}
+.ef-submit button{width:100%;padding:1rem;border-radius:8px;background:var(--red);color:#fff;font-weight:700;font-size:.9rem;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.4rem;transition:all .3s;font-family:var(--sans)}
 .ef-submit button:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:var(--shadow-md)}
 
-/* FAQ (Moved below Contact) */
-#faq{background:var(--bg)}
-.faq-list{max-width:700px;margin:0 auto;display:flex;flex-direction:column;gap:.45rem}
+/* SEO KEYWORD SECTION */
+.seo-section{background:var(--bg2);padding:4rem 2rem}
+.seo-section-inner{max-width:1440px;margin:0 auto}
+.seo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.2rem;max-width:1300px;margin:0 auto}
+.seo-card{padding:1.5rem;background:var(--white);border:1.5px solid var(--border2);border-radius:var(--radius);transition:all .3s}
+.seo-card:hover{border-color:var(--red)}
+.seo-card h3{font-size:.95rem;font-weight:700;margin-bottom:.4rem;display:flex;align-items:center;gap:.4rem}
+.seo-card h3 i{color:var(--red);font-size:.8rem}
+.seo-card p{font-size:.8rem;color:var(--text);line-height:1.6}
+.areas-wrap{margin-top:3rem;text-align:center}
+.areas-title{font-size:.6rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:.8rem}
+.areas-list{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem .6rem;font-size:.7rem;color:var(--text);font-weight:500}
+
+/* FAQ (Moved below SEO Section for true bottom placement) */
+#faq{background:var(--white)}
+.faq-list{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:.6rem}
 .faq-item{border:1.5px solid var(--border2);border-radius:var(--radius);overflow:hidden;background:var(--white);transition:border-color .3s}
 .faq-item.open{border-color:var(--red)}
-.faq-q{padding:.9rem 1.1rem;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-weight:700;font-size:.82rem;gap:.7rem;user-select:none;transition:background .3s}
+.faq-q{padding:1rem 1.4rem;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-weight:700;font-size:.9rem;gap:.8rem;user-select:none;transition:background .3s}
 .faq-q:hover{background:var(--bg)}
-.faq-icon{width:24px;height:24px;border-radius:50%;background:var(--bg2);display:flex;align-items:center;justify-content:center;font-size:.5rem;color:var(--muted);flex-shrink:0;transition:all .3s}
+.faq-icon{width:28px;height:28px;border-radius:50%;background:var(--bg2);display:flex;align-items:center;justify-content:center;font-size:.6rem;color:var(--muted);flex-shrink:0;transition:all .3s}
 .faq-item.open .faq-icon{background:var(--red-light);color:var(--red);transform:rotate(45deg)}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .4s ease}
-.faq-item.open .faq-a{max-height:300px;padding:0 1.1rem .9rem}
-.faq-a p{font-size:.76rem;color:var(--text);line-height:1.75}
+.faq-item.open .faq-a{max-height:400px;padding:0 1.4rem 1.1rem}
+.faq-a p{font-size:.85rem;color:var(--text);line-height:1.75}
 
 /* FOOTER */
-footer{background:var(--slate-dark);padding:3rem 2rem;color:rgba(255,255,255,.35)}
-.foot-inner{max-width:1200px;margin:0 auto}
-.foot-cities{text-align:center;margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.05)}
-.fc-label{font-size:.5rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.2);margin-bottom:.8rem}
-.fc-list{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 1rem;font-size:.72rem;font-weight:500;color:rgba(255,255,255,.6)}
-.foot-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
-footer p{font-size:.65rem}footer .hl{color:var(--white);font-weight:700;font-size:.75rem}
-.foot-social{display:flex;gap:.5rem}
-.foot-social a{width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:.7rem;color:rgba(255,255,255,.5);transition:all .3s}
+footer{background:var(--slate-dark);padding:4rem 2rem;color:rgba(255,255,255,.35)}
+.foot-inner{max-width:1440px;margin:0 auto}
+.foot-cities{text-align:center;margin-bottom:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.05)}
+.fc-label{font-size:.6rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.2);margin-bottom:1rem}
+.fc-list{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem 1.2rem;font-size:.8rem;font-weight:500;color:rgba(255,255,255,.6)}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem}
+footer p{font-size:.75rem}footer .hl{color:var(--white);font-weight:700;font-size:.85rem}
+.foot-social{display:flex;gap:.6rem}
+.foot-social a{width:38px;height:38px;border-radius:8px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:.8rem;color:rgba(255,255,255,.5);transition:all .3s}
 .foot-social a:hover{color:#fff;background:var(--red);border-color:var(--red);transform:translateY(-2px)}
 
 /* MOBILE BAR */
-.mob-bar{position:fixed;bottom:0;left:0;width:100%;z-index:990;display:none;background:var(--white);border-top:1px solid var(--border);box-shadow:0 -4px 12px rgba(0,0,0,.04)}
-.mob-bar-inner{display:grid;grid-template-columns:1fr 1fr;height:56px}
-.mob-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:.45rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;gap:2px;transition:background .2s}
-.mob-bar a i{font-size:1rem}.mb-call{color:var(--ink);border-right:1px solid var(--border)}.mb-call:active{background:var(--bg2)}
+.mob-bar{position:fixed;bottom:0;left:0;width:100%;z-index:990;display:none;background:var(--white);border-top:1px solid var(--border);box-shadow:0 -4px 16px rgba(0,0,0,.06)}
+.mob-bar-inner{display:grid;grid-template-columns:1fr 1fr;height:60px}
+.mob-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:.5rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;gap:3px;transition:background .2s}
+.mob-bar a i{font-size:1.1rem}.mb-call{color:var(--ink);border-right:1px solid var(--border)}.mb-call:active{background:var(--bg2)}
 .mb-wa{background:var(--slate-dark);color:#fff}.mb-wa:active{background:var(--ink)}
 
 /* WA FAB */
-.wa-fab{position:fixed;bottom:18px;right:18px;z-index:900;width:54px;height:54px;border-radius:50%;background:#25d366;display:none;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(37,211,102,.3);transition:all .3s;animation:popIn .5s ease-out 1.5s both}
-.wa-fab:hover{transform:scale(1.08)}.wa-fab i{font-size:1.5rem;color:#fff}
+.wa-fab{position:fixed;bottom:20px;right:20px;z-index:900;width:58px;height:58px;border-radius:50%;background:#25d366;display:none;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.35);transition:all .3s;animation:popIn .5s ease-out 1.5s both}
+.wa-fab:hover{transform:scale(1.08)}.wa-fab i{font-size:1.6rem;color:#fff}
 @keyframes popIn{from{opacity:0;transform:scale(0)}to{opacity:1;transform:scale(1)}}
 
 /* REVEAL */
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}
 .reveal.vis{opacity:1;transform:none}
 .rd1{transition-delay:.1s}.rd2{transition-delay:.2s}.rd3{transition-delay:.3s}
 
 /* RESPONSIVE */
-@media(max-width:1100px){
+@media(max-width:1200px){
 .about-grid,.savings-grid,.amc-layout{grid-template-columns:1fr!important}
-.about-img-wrap{max-width:420px;margin:0 auto}
+.about-img-wrap{max-width:500px;margin:0 auto}
 .products-grid{grid-template-columns:repeat(2,1fr)}
 .p-card.wide{grid-column:span 2}
 .compare-grid,.install-grid{grid-template-columns:1fr}
 }
 @media(max-width:768px){
-.nav-links{display:none;position:fixed;inset:0;background:rgba(255,255,255,.97);backdrop-filter:blur(16px);flex-direction:column;justify-content:center;align-items:center;gap:1.6rem;z-index:1001}
+.nav-links{display:none;position:fixed;inset:0;background:rgba(255,255,255,.98);backdrop-filter:blur(20px);flex-direction:column;justify-content:center;align-items:center;gap:2rem;z-index:1001}
 .nav-links.open{display:flex}
-.nav-links a{font-size:1rem;color:var(--ink)}
+.nav-links a{font-size:1.1rem;color:var(--ink)}
 .mob-btn{display:block}
-.mob-bar{display:block}body{padding-bottom:56px}
-section{padding:3rem 1.2rem}
-.hero{height:500px}
+.mob-bar{display:block}body{padding-bottom:60px}
+section{padding:3.5rem 1.2rem}
+.hero{height:550px}
 .stat-row{grid-template-columns:repeat(2,1fr)}
 .products-grid{grid-template-columns:1fr}.p-card.wide{grid-column:span 1}
 .cu-top{grid-template-columns:1fr!important}
-.cu-info{border-right:none;border-bottom:1px solid var(--border2);padding:1.5rem}
-.cu-form{padding:1.5rem}
+.cu-info{border-right:none;border-bottom:1px solid var(--border2);padding:1.8rem}
+.cu-form{padding:1.8rem}
 .ef-row{grid-template-columns:1fr}
-.foot-bottom{flex-direction:column;text-align:center}
-.wa-fab{bottom:70px}
+.foot-bottom{flex-direction:column;text-align:center;gap:1.5rem}
+.wa-fab{bottom:75px}
 }
 @media(max-width:480px){
-.hero{height:460px}
-.hero h1{font-size:1.8rem}
+.hero{height:480px}
+.hero h1{font-size:1.9rem}
 .stat-row{grid-template-columns:1fr}
-.about-text h2{font-size:1.6rem}
-.sec-h{font-size:1.6rem}
-footer{padding:2rem 1.2rem}
-.wa-fab{width:46px;height:46px;bottom:68px;right:14px}.wa-fab i{font-size:1.2rem}
-.rev-card {min-width: 280px; padding: 1.2rem;}
+.about-text h2{font-size:1.7rem}
+.sec-h{font-size:1.7rem}
+footer{padding:2.5rem 1.2rem}
+.wa-fab{width:50px;height:50px;bottom:72px;right:14px}.wa-fab i{font-size:1.3rem}
+.rev-card {min-width: 290px; padding: 1.4rem;}
 }
 </style>
 </head>
@@ -428,7 +441,7 @@ footer{padding:2rem 1.2rem}
 <div class="topbar"><div class="topbar-inner"><div style="display:flex;gap:1.5rem"><a href="#"><i class="fa-solid fa-location-dot"></i> Serving Tamil Nadu Since 1998</a><a href="tel:+919840073436"><i class="fa-solid fa-phone"></i> +91 98400 73436</a></div><div class="tb-right"><span><i class="fa-solid fa-shield-halved"></i> Authorized Dealer</span><span><i class="fa-solid fa-certificate"></i> 100% Genuine</span></div></div></div>
 
 <header class="nav has-topbar" id="mainNav"><div class="nav-wrap">
-<a href="#" class="nav-brand"><img src="logo.png" alt="CRS Logo" style="height: 42px; width: auto; border-radius:4px;"><div><div class="nb-name">CRS AIRCON</div><div class="nb-sub">Authorized Sales, Service & Spares Dealer</div></div></a>
+<a href="#" class="nav-brand"><img src="logo.png" alt="CRS Logo" style="height: 46px; width: auto; border-radius:4px;"><div><div class="nb-name">CRS AIRCON</div><div class="nb-sub">Authorized Sales, Service & Spares Dealer</div></div></a>
 <nav class="nav-links" id="navLinks">
 <a href="#about">Who We Are</a><a href="#products">AC Types</a><a href="#amc" class="amc-link">AMC Plans</a><a href="#contact">Contact</a><a href="#faq">FAQ</a><a href="#contact" class="nav-cta"><i class="fa-solid fa-paper-plane"></i> Request Quote</a>
 </nav>
@@ -436,7 +449,7 @@ footer{padding:2rem 1.2rem}
 </div></header>
 
 <section class="hero">
-<div class="slide active"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069" alt="HVAC" style="opacity:.55"><div class="slide-overlay"></div><div class="slide-content"><div class="slide-inner"><div style="max-width:560px"><div class="hero-chip"><div class="dot"></div><span>Authorized Multi-Brand Dealer</span></div><h1>Expert AC Solutions <br><span class="gradient">For Home & Office.</span></h1><p class="hero-desc">Trusted since 1998. We sell, install, and service all types of Air Conditioners for homes and businesses across Tamil Nadu.</p><a href="#products" class="hero-btn"><i class="fa-solid fa-snowflake"></i> View AC Types <i class="fa-solid fa-arrow-right" style="font-size:.55rem"></i></a></div></div></div></div>
+<div class="slide active"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069" alt="HVAC" style="opacity:.55"><div class="slide-overlay"></div><div class="slide-content"><div class="slide-inner"><div style="max-width:650px"><div class="hero-chip"><div class="dot"></div><span>Authorized Multi-Brand Dealer</span></div><h1>Expert AC Solutions <br><span class="gradient">For Home & Office.</span></h1><p class="hero-desc">Trusted since 1998. We sell, install, and service all types of Air Conditioners for homes and businesses across Tamil Nadu.</p><a href="#products" class="hero-btn"><i class="fa-solid fa-snowflake"></i> View AC Types <i class="fa-solid fa-arrow-right" style="font-size:.6rem"></i></a></div></div></div></div>
 <div class="slide"><img src="https://images.unsplash.com/photo-1631545806609-35dab2cad490?q=80&w=2000" alt="Living" style="opacity:.45"><div class="slide-overlay slide-overlay-center"></div><div class="slide-content"><div class="slide-inner" style="display:flex;justify-content:center"><div class="slide-center"><div class="exchange-tag">Exchange Offer</div><h1>Lower Your <span class="gradient">Electricity Bill.</span></h1><p class="hero-desc">Exchange your old AC for a new 5-Star Inverter AC. Save up to 40% on electricity every month.</p><a href="https://wa.me/919840073436?text=AC%20Exchange%20Enquiry" target="_blank" class="hero-btn hero-btn-red"><i class="fa-solid fa-bolt"></i> Check Exchange Value</a></div></div></div></div>
 <button class="slide-arrow" onclick="nextSlide()"><i class="fa-solid fa-chevron-right"></i></button>
 </section>
@@ -480,9 +493,9 @@ footer{padding:2rem 1.2rem}
 <div class="compare-card recommended reveal rd1"><h3><i class="fa-solid fa-circle-check" style="color:var(--red)"></i> CRS Aircon</h3><div class="cc-item"><i class="fa-solid fa-check cc-check"></i><div><strong>Own Staff:</strong> Trained, reliable, and accountable technicians.</div></div><div class="cc-item"><i class="fa-solid fa-check cc-check"></i><div><strong>Transparent:</strong> All-inclusive GST pricing. No hidden surprises.</div></div><div class="cc-item"><i class="fa-solid fa-check cc-check"></i><div><strong>Lifetime Support:</strong> Walk into our showroom anytime for help.</div></div><div class="cc-item"><i class="fa-solid fa-check cc-check"></i><div><strong>Free Advice:</strong> We check your room dimensions before recommending.</div></div></div></div></section>
 
 <section id="savings"><div class="savings-grid">
-<div class="reveal"><div class="sec-tag" style="background:rgba(192,39,45,.15);color:#fca5a5">Save Money</div><h2 style="font-size:clamp(1.5rem,3vw,2.1rem);font-weight:800;color:#fff;margin-bottom:.4rem">Lower Your <span style="font-family:var(--serif);font-style:italic;color:#fca5a5">Electricity Bill.</span></h2><p style="color:rgba(203,213,225,.6);font-size:.82rem;line-height:1.75;margin-bottom:1.5rem">Inverter ACs adjust speed automatically — saving 30-50% electricity vs old Non-Inverter ACs.</p>
-<div style="display:flex;flex-direction:column;gap:1.2rem"><div><div class="sbar-label">Old Non-Inverter AC</div><div class="sbar-track"><div class="sbar-fill red" data-width="100%"></div></div><div class="sbar-result red">₹3,500/month — High Cost</div></div><div><div class="sbar-label">New 5-Star Inverter AC</div><div class="sbar-track"><div class="sbar-fill green" data-width="55%"></div></div><div class="sbar-result green">₹1,900/month — Save 45%</div></div></div></div>
-<div class="savings-box reveal rd1"><h4><i class="fa-solid fa-chart-column"></i> 5-Year Savings</h4><p class="sv-sub">Based on 8 hours daily in Chennai.</p><div class="sv-row"><span class="sv-label">Old AC (5 years)</span><span class="sv-val">₹2,10,000</span></div><div class="sv-row"><span class="sv-label">Inverter AC (5 years)</span><span class="sv-val">₹1,14,000</span></div><div class="sv-row" style="border-bottom:2px solid rgba(192,39,45,.3)"><span class="sv-label" style="color:#fca5a5;font-weight:700">Total Saved</span><span class="sv-val" style="color:#4ade80;font-size:1.1rem">₹96,000+</span></div><p class="sv-note">*Actual savings vary by usage.</p></div>
+<div class="reveal"><div class="sec-tag" style="background:rgba(192,39,45,.15);color:#fca5a5">Save Money</div><h2 style="font-size:clamp(1.8rem,4vw,2.5rem);font-weight:800;color:#fff;margin-bottom:.5rem">Lower Your <span style="font-family:var(--serif);font-style:italic;color:#fca5a5">Electricity Bill.</span></h2><p style="color:rgba(203,213,225,.7);font-size:1rem;line-height:1.8;margin-bottom:1.8rem">Inverter ACs adjust speed automatically — saving 30-50% electricity vs old Non-Inverter ACs.</p>
+<div style="display:flex;flex-direction:column;gap:1.5rem"><div><div class="sbar-label">Old Non-Inverter AC</div><div class="sbar-track"><div class="sbar-fill red" data-width="100%"></div></div><div class="sbar-result red">₹3,500/month — High Cost</div></div><div><div class="sbar-label">New 5-Star Inverter AC</div><div class="sbar-track"><div class="sbar-fill green" data-width="55%"></div></div><div class="sbar-result green">₹1,900/month — Save 45%</div></div></div></div>
+<div class="savings-box reveal rd1"><h4><i class="fa-solid fa-chart-column"></i> 5-Year Savings</h4><p class="sv-sub">Based on 8 hours daily in Chennai.</p><div class="sv-row"><span class="sv-label">Old AC (5 years)</span><span class="sv-val">₹2,10,000</span></div><div class="sv-row"><span class="sv-label">Inverter AC (5 years)</span><span class="sv-val">₹1,14,000</span></div><div class="sv-row" style="border-bottom:2px solid rgba(192,39,45,.3)"><span class="sv-label" style="color:#fca5a5;font-weight:700">Total Saved</span><span class="sv-val" style="color:#4ade80;font-size:1.3rem">₹96,000+</span></div><p class="sv-note">*Actual savings vary by usage.</p></div>
 </div></section>
 
 <section id="products"><div class="sec-header reveal"><div class="sec-tag">Product Range</div><div class="sec-h">Types of ACs <span class="i">We Sell</span></div><p class="sec-p">All types for your home, shop, showroom, or factory.</p></div>
@@ -491,7 +504,7 @@ footer{padding:2rem 1.2rem}
 <div class="p-card reveal rd1"><div class="p-img"><img src="ac-window.jpg" alt="Window AC" onerror="this.src='https://plus.unsplash.com/premium_photo-1663045625477-969c6426ddc3?q=80&w=800'"><div class="p-img-overlay"></div><div class="p-img-tag">Budget Friendly</div></div><div class="p-body"><h3>Window AC</h3><p>Strong, durable, easy to service. Great for budget buyers.</p><div class="copper"><i class="fa-solid fa-medal"></i> 100% Copper Coil</div></div></div>
 <div class="p-card reveal rd2"><div class="p-img"><img src="ac-cassette.jpg" alt="Cassette AC" onerror="this.src='https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800'"><div class="p-img-overlay"></div><div class="p-img-tag">Showrooms</div></div><div class="p-body"><h3>Cassette AC</h3><p>Ceiling mounted. 4-direction airflow. Best for shops and offices.</p><div class="copper"><i class="fa-solid fa-medal"></i> 100% Copper Coil</div></div></div>
 <div class="p-card reveal"><div class="p-img"><img src="ac-vrf.jpg" alt="VRF" onerror="this.src='https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?q=80&w=800'"><div class="p-img-overlay"></div><div class="p-img-tag">Commercial</div></div><div class="p-body"><h3>VRF / VRV Systems</h3><p>One outdoor unit, multiple indoor. For large buildings.</p><div class="copper"><i class="fa-solid fa-medal"></i> 100% Copper Coil</div></div></div>
-<div class="p-card wide reveal rd1"><div class="p-img"><img src="ac-ductable.jpg" alt="Ductable" onerror="this.src='https://images.unsplash.com/photo-1504384308090-c54be3855833?q=80&w=1200'"><div class="p-img-overlay"></div><div class="p-img-tag"><span style="background:var(--red);padding:.12rem .35rem;border-radius:4px;font-size:.45rem;color:#fff">INDUSTRIAL</span></div></div><div class="p-body"><h3>Ductable Air Conditioning</h3><p>Centralized cooling. Hidden units. For hotels, halls, hospitals, villas.</p><div class="copper"><i class="fa-solid fa-medal"></i> 100% Copper Coil</div></div></div>
+<div class="p-card wide reveal rd1"><div class="p-img"><img src="ac-ductable.jpg" alt="Ductable" onerror="this.src='https://images.unsplash.com/photo-1504384308090-c54be3855833?q=80&w=1200'"><div class="p-img-overlay"></div><div class="p-img-tag"><span style="background:var(--red);padding:.15rem .45rem;border-radius:4px;font-size:.55rem;color:#fff">INDUSTRIAL</span></div></div><div class="p-body"><h3>Ductable Air Conditioning</h3><p>Centralized cooling. Hidden units. For hotels, halls, hospitals, villas.</p><div class="copper"><i class="fa-solid fa-medal"></i> 100% Copper Coil</div></div></div>
 </div></section>
 
 <section id="installation"><div class="sec-header reveal"><div class="sec-tag">Quality Matters</div><div class="sec-h">Why Installation <span class="i">Matters</span></div><p class="sec-p">90% of AC problems happen from bad fitting.</p></div>
@@ -596,7 +609,46 @@ footer{padding:2rem 1.2rem}
 </div>
 </section>
 
-<!-- FAQ (Moved Below Contact) -->
+<!-- SEO KEYWORD SECTION -->
+<section class="seo-section">
+<div class="seo-section-inner">
+<div class="sec-header reveal"><div class="sec-tag">Our Services</div><div class="sec-h">Complete Air Conditioning <span class="i">Solutions</span></div><p class="sec-p">From buying a new AC to annual maintenance — CRS Aircon is your single-stop HVAC partner in Chennai.</p></div>
+<div class="seo-grid reveal">
+<div class="seo-card">
+<h3><i class="fa-solid fa-cart-shopping"></i> AC Sales Chennai</h3>
+<p>Buy split AC, window AC, cassette AC, ductable AC and VRF systems at best prices in Chennai from authorized dealers.</p>
+</div>
+<div class="seo-card">
+<h3><i class="fa-solid fa-wrench"></i> AC Installation Service</h3>
+<p>Professional air conditioner installation within 24 hours. Copper piping, gas charging, and full testing included.</p>
+</div>
+<div class="seo-card">
+<h3><i class="fa-solid fa-screwdriver-wrench"></i> AC Repair & Service</h3>
+<p>Expert AC repair, gas refilling, compressor replacement, and troubleshooting for all brands in Chennai and Tamil Nadu.</p>
+</div>
+<div class="seo-card">
+<h3><i class="fa-solid fa-shield-halved"></i> AC AMC Plans</h3>
+<p>Annual maintenance contracts starting at ₹999/year. Preventive servicing to keep your air conditioner running efficiently.</p>
+</div>
+<div class="seo-card">
+<h3><i class="fa-solid fa-box-open"></i> AC Spare Parts</h3>
+<p>Genuine spare parts for Daikin, Blue Star, Carrier, Mitsubishi, Voltas, Hitachi, Godrej, and LG air conditioners.</p>
+</div>
+<div class="seo-card">
+<h3><i class="fa-solid fa-building"></i> Commercial HVAC</h3>
+<p>VRF, VRV, and ductable AC systems for offices, showrooms, hotels, hospitals, and industrial facilities across Tamil Nadu.</p>
+</div>
+</div>
+<div class="areas-wrap reveal">
+<h4 class="areas-title">Areas We Serve in Chennai</h4>
+<div class="areas-list">
+<span>Valasaravakkam</span><span>•</span><span>Porur</span><span>•</span><span>Virugambakkam</span><span>•</span><span>Saligramam</span><span>•</span><span>Vadapalani</span><span>•</span><span>Ashok Nagar</span><span>•</span><span>KK Nagar</span><span>•</span><span>T. Nagar</span><span>•</span><span>Anna Nagar</span><span>•</span><span>Adyar</span><span>•</span><span>Velachery</span><span>•</span><span>Tambaram</span><span>•</span><span>OMR</span><span>•</span><span>ECR</span><span>•</span><span>Guindy</span><span>•</span><span>Chromepet</span><span>•</span><span>Ambattur</span><span>•</span><span>Avadi</span><span>•</span><span>Sholinganallur</span><span>•</span><span>Perambur</span><span>•</span><span>Mogappair</span><span>•</span><span>Pallavaram</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ (Moved to the absolute bottom above footer) -->
 <section id="faq"><div class="sec-header reveal"><div class="sec-tag">FAQ</div><div class="sec-h">Frequently Asked <span class="i">Questions</span></div></div>
 <div class="faq-list">
 <div class="faq-item reveal" onclick="this.classList.toggle('open')"><div class="faq-q">Which AC brand is best for Chennai's climate?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></div><div class="faq-a"><p>Chennai's hot and humid climate needs high-efficiency cooling. We recommend Daikin and Mitsubishi for inverter tech, or Blue Star for dehumidification. Visit us — we'll help based on room size and budget.</p></div></div>
@@ -605,45 +657,6 @@ footer{padding:2rem 1.2rem}
 <div class="faq-item reveal" onclick="this.classList.toggle('open')"><div class="faq-q">How fast is installation?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></div><div class="faq-a"><p>Within 24 hours. Our in-house team handles copper piping, gas charging, electrical, and full test run. No outsourcing.</p></div></div>
 <div class="faq-item reveal" onclick="this.classList.toggle('open')"><div class="faq-q">Authorized dealers or resellers?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></div><div class="faq-a"><p>Factory-authorized for all 8 brands. Official manufacturer warranty, genuine parts, authorized service. Not a reseller.</p></div></div>
 </div></section>
-
-<!-- SEO KEYWORD SECTION -->
-<section style="background:var(--bg2);padding:3rem 2rem">
-<div style="max-width:1100px;margin:0 auto">
-<div class="sec-header reveal"><div class="sec-tag">Our Services</div><div class="sec-h">Complete Air Conditioning <span class="i">Solutions</span></div><p class="sec-p">From buying a new AC to annual maintenance — CRS Aircon is your single-stop HVAC partner in Chennai.</p></div>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.8rem;max-width:1000px;margin:0 auto" class="reveal">
-<div style="padding:1.2rem;background:var(--white);border:1.5px solid var(--border2);border-radius:var(--radius);transition:all .3s" onmouseover="this.style.borderColor='var(--red)'" onmouseout="this.style.borderColor='var(--border2)'">
-<h3 style="font-size:.82rem;font-weight:700;margin-bottom:.2rem;display:flex;align-items:center;gap:.3rem"><i class="fa-solid fa-cart-shopping" style="color:var(--red);font-size:.65rem"></i> AC Sales Chennai</h3>
-<p style="font-size:.65rem;color:var(--text);line-height:1.6">Buy split AC, window AC, cassette AC, ductable AC and VRF systems at best prices in Chennai from authorized dealers.</p>
-</div>
-<div style="padding:1.2rem;background:var(--white);border:1.5px solid var(--border2);border-radius:var(--radius);transition:all .3s" onmouseover="this.style.borderColor='var(--red)'" onmouseout="this.style.borderColor='var(--border2)'">
-<h3 style="font-size:.82rem;font-weight:700;margin-bottom:.2rem;display:flex;align-items:center;gap:.3rem"><i class="fa-solid fa-wrench" style="color:var(--red);font-size:.65rem"></i> AC Installation Service</h3>
-<p style="font-size:.65rem;color:var(--text);line-height:1.6">Professional air conditioner installation within 24 hours. Copper piping, gas charging, and full testing included.</p>
-</div>
-<div style="padding:1.2rem;background:var(--white);border:1.5px solid var(--border2);border-radius:var(--radius);transition:all .3s" onmouseover="this.style.borderColor='var(--red)'" onmouseout="this.style.borderColor='var(--border2)'">
-<h3 style="font-size:.82rem;font-weight:700;margin-bottom:.2rem;display:flex;align-items:center;gap:.3rem"><i class="fa-solid fa-screwdriver-wrench" style="color:var(--red);font-size:.65rem"></i> AC Repair & Service</h3>
-<p style="font-size:.65rem;color:var(--text);line-height:1.6">Expert AC repair, gas refilling, compressor replacement, and troubleshooting for all brands in Chennai and Tamil Nadu.</p>
-</div>
-<div style="padding:1.2rem;background:var(--white);border:1.5px solid var(--border2);border-radius:var(--radius);transition:all .3s" onmouseover="this.style.borderColor='var(--red)'" onmouseout="this.style.borderColor='var(--border2)'">
-<h3 style="font-size:.82rem;font-weight:700;margin-bottom:.2rem;display:flex;align-items:center;gap:.3rem"><i class="fa-solid fa-shield-halved" style="color:var(--red);font-size:.65rem"></i> AC AMC Plans</h3>
-<p style="font-size:.65rem;color:var(--text);line-height:1.6">Annual maintenance contracts starting at ₹999/year. Preventive servicing to keep your air conditioner running efficiently.</p>
-</div>
-<div style="padding:1.2rem;background:var(--white);border:1.5px solid var(--border2);border-radius:var(--radius);transition:all .3s" onmouseover="this.style.borderColor='var(--red)'" onmouseout="this.style.borderColor='var(--border2)'">
-<h3 style="font-size:.82rem;font-weight:700;margin-bottom:.2rem;display:flex;align-items:center;gap:.3rem"><i class="fa-solid fa-box-open" style="color:var(--red);font-size:.65rem"></i> AC Spare Parts</h3>
-<p style="font-size:.65rem;color:var(--text);line-height:1.6">Genuine spare parts for Daikin, Blue Star, Carrier, Mitsubishi, Voltas, Hitachi, Godrej, and LG air conditioners.</p>
-</div>
-<div style="padding:1.2rem;background:var(--white);border:1.5px solid var(--border2);border-radius:var(--radius);transition:all .3s" onmouseover="this.style.borderColor='var(--red)'" onmouseout="this.style.borderColor='var(--border2)'">
-<h3 style="font-size:.82rem;font-weight:700;margin-bottom:.2rem;display:flex;align-items:center;gap:.3rem"><i class="fa-solid fa-building" style="color:var(--red);font-size:.65rem"></i> Commercial HVAC</h3>
-<p style="font-size:.65rem;color:var(--text);line-height:1.6">VRF, VRV, and ductable AC systems for offices, showrooms, hotels, hospitals, and industrial facilities across Tamil Nadu.</p>
-</div>
-</div>
-<div style="margin-top:2rem;text-align:center" class="reveal">
-<p style="font-size:.5rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem">Areas We Serve in Chennai</p>
-<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:.3rem .5rem;font-size:.62rem;color:var(--text);font-weight:500">
-<span>Valasaravakkam</span><span>•</span><span>Porur</span><span>•</span><span>Virugambakkam</span><span>•</span><span>Saligramam</span><span>•</span><span>Vadapalani</span><span>•</span><span>Ashok Nagar</span><span>•</span><span>KK Nagar</span><span>•</span><span>T. Nagar</span><span>•</span><span>Anna Nagar</span><span>•</span><span>Adyar</span><span>•</span><span>Velachery</span><span>•</span><span>Tambaram</span><span>•</span><span>OMR</span><span>•</span><span>ECR</span><span>•</span><span>Guindy</span><span>•</span><span>Chromepet</span><span>•</span><span>Ambattur</span><span>•</span><span>Avadi</span><span>•</span><span>Sholinganallur</span><span>•</span><span>Perambur</span><span>•</span><span>Mogappair</span><span>•</span><span>Pallavaram</span>
-</div>
-</div>
-</div>
-</section>
 
 <footer><div class="foot-inner"><div class="foot-cities"><div class="fc-label">Service Network in Tamil Nadu</div><div class="fc-list"><span>Chennai</span><span>Madurai</span><span>Coimbatore</span><span>Trichy</span><span>Salem</span><span>Tirunelveli</span><span>Erode</span><span>Vellore</span><span>Thoothukudi</span><span>Tiruppur</span></div></div><div class="foot-bottom"><p><span class="hl">CRS AIRCON</span> &copy; 2025 — Authorized Sales, Services & Spares · Chennai 600087</p><div class="foot-social"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-youtube"></i></a><a href="https://wa.me/919840073436" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div></div></div></footer>
 
