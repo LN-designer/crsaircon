@@ -57,3 +57,18 @@ The visitor enters details locally, reviews a preview, opens WhatsApp, then send
 - Internal anchors, local assets, duplicate IDs, JSON structured data, SVG and sitemap XML, domain, verification and contact values passed static checks.
 
 Not established by these checks: real business enquiry receipt, booking response, stock/model availability, full assistive-technology audit, field performance/Core Web Vitals or search indexing. Public checks follow approved deployment. No social content or schedule was changed by this redesign.
+
+## 18:00 IST daily review — 16 November
+
+The existing draft PR is the current release candidate; GitHub access is working. No new owner release decision is recorded, and the three social records remain `draft_ready` with no publication URLs.
+
+Two additional failures were reproduced and corrected:
+
+- At a 568 × 320 landscape viewport, the open navigation extended to 376 px and the centre of “Let’s talk” was below the screen. The mobile navigation now has a viewport-bounded height and its own vertical scrolling; links retain their height. The bottom contact bar clears the open menu. The CSS URL is versioned `20261116-v3.1`.
+- The local standalone-review generator replaced a deferred external script with an immediate inline script in the head. It ran before the form existed, leaving the menu hidden and the system/form controls disabled. The generator in the workspace's `redesign-review-v3/build_review.py` now waits for `DOMContentLoaded`. This packaging correction does not change the hosted enquiry script.
+
+Browser validation used a separate loopback HTTP server and tab. At 568 × 320, keyboard Tab reached the final menu link, scrolled the navigation by 83 px and kept the link within the screen; Enter navigated to enquiry and closed the menu. Escape closed it and returned focus to Menu. At 667 × 375, scrolling and clicking the final menu link also worked. At 320 × 568, portrait navigation fit; the contact bar returned after closing and cleared the form/dialog. A fictional service enquiry opened only the unsent preview, retained the source label and closed with Edit/focus return. Desktop 1440 × 900 retained its inline navigation, loaded hero and no horizontal overflow.
+
+The refreshed standalone review passed the same short-screen keyboard menu check, End-key selection of VRF, commercial enquiry preselection, source label, local preview and Escape closure. No non-local HTTP resource or external send occurred in these checks. Test details were fictional and were not recorded as business enquiries. The current review HTML supersedes the earlier generated standalone; the rejected earlier website and its archives remain historical backups.
+
+This remains a draft for owner design/release approval. Main, hosting configuration, social assets, publication states, schedules and readiness/financial measurements are unchanged. Receiving-side enquiry receipt and live field performance remain unverified.
