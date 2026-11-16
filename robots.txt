@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://crsaircon.in/sitemap.xml
