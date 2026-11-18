@@ -349,8 +349,8 @@
       // roof marker
       if (m.heat.includes('roof')) { svgEl('rect', { x: x0 - 10, y: y0 - 10, width: rW + 20, height: rL + 20, rx: 10, fill: 'none', stroke: '#a05a2c', 'stroke-width': 2, 'stroke-dasharray': '8 6' }, g); const t = svgEl('text', { x: x0 + rW - 6, y: y0 - 16, 'text-anchor': 'end', 'font-size': 13, 'font-weight': 700, fill: '#a05a2c' }, g); t.textContent = 'Roof above'; }
       // heat props
-      if (m.heat.includes('kitchen')) { const kx = x0 + 10, ky = y0 + 10; svgEl('rect', { x: kx, y: ky, width: Math.min(70, rW * .28), height: 26, rx: 5, fill: '#f0b36b' }, g); const t = svgEl('text', { x: kx + 8, y: ky + 18, 'font-size': 13, 'font-weight': 700, fill: '#5e2d12' }, g); t.textContent = 'Cooking'; }
-      if (m.heat.includes('equipment')) { const ex = x0 + rW - Math.min(86, rW * .34) - 10, ey = y0 + rL - 36; svgEl('rect', { x: ex, y: ey, width: Math.min(86, rW * .34), height: 26, rx: 5, fill: '#cdd7d2' }, g); const t = svgEl('text', { x: ex + 8, y: ey + 18, 'font-size': 13, 'font-weight': 700, fill: '#26332c' }, g); t.textContent = 'Equipment'; }
+      if (m.heat.includes('kitchen')) { const kx = x0 + 10, ky = y0 + 10; svgEl('rect', { x: kx, y: ky, width: Math.min(84, rW * .46), height: 26, rx: 5, fill: '#f0b36b' }, g); const t = svgEl('text', { x: kx + 8, y: ky + 18, 'font-size': 13, 'font-weight': 700, fill: '#5e2d12' }, g); t.textContent = 'Cooking'; }
+      if (m.heat.includes('equipment')) { const ew = Math.min(98, rW * .5), ex = x0 + rW - ew - 10, ey = y0 + rL - 36; svgEl('rect', { x: ex, y: ey, width: ew, height: 26, rx: 5, fill: '#cdd7d2' }, g); const t = svgEl('text', { x: ex + 8, y: ey + 18, 'font-size': 13, 'font-weight': 700, fill: '#26332c' }, g); t.textContent = 'Equipment'; }
       // people
       let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
       const n = Math.min(m.p, 44);
