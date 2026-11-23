@@ -656,3 +656,20 @@ dialog pre{margin:20px 0;padding:18px;border-radius:18px;background:var(--sand);
 @media(max-height:520px) and (orientation:landscape){.hero{min-height:560px;height:auto}.hero-inner{padding-top:110px;padding-bottom:140px}}
 @media print{.site-header,.dock,.cursor,.progress{display:none}}
 .spaces .panels-note{color:#aeb9aa;margin-top:18px}
+
+/* ---------- Best price (candidate, 23 Nov 2026) ---------- */
+.bestprice{background:var(--sand);z-index:8}
+.bp-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:60px;align-items:center}
+.bp-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px;margin-top:32px}
+.bestprice .fine{margin-top:18px;max-width:54ch}
+.text-link-inline{font-weight:700;color:var(--red);text-decoration:underline;text-underline-offset:3px}
+.bp-card{padding:clamp(24px,3vw,40px);border-radius:34px;background:var(--cream);border:1px solid rgba(27,38,32,.09);box-shadow:0 30px 70px -48px rgba(27,38,32,.55)}
+.bp-card-kicker{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.bp-card h3{margin-top:10px;font-size:clamp(24px,2.4vw,32px);font-weight:600;letter-spacing:-.03em;line-height:1.1}
+.bp-list{display:grid;gap:12px;margin:26px 0 20px;padding:0;list-style:none}
+.bp-list li{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;padding:14px 18px;border-radius:20px;background:#fff;border:1px solid rgba(27,38,32,.09)}
+.bp-n{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--red);color:#fff;font-weight:700;font-size:15px}
+.bp-list b{display:block;font-size:17px;font-weight:700;letter-spacing:-.01em;line-height:1.25}
+.bp-list small{display:block;margin-top:2px;font-size:14.5px;line-height:1.45;color:var(--muted)}
+@media(max-width:1020px){.bp-grid{grid-template-columns:1fr;gap:36px}}
+@media(max-width:600px){.bp-list li{padding:12px 14px;gap:12px}.bp-n{width:34px;height:34px}.bp-actions{gap:16px 22px}}
