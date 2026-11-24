@@ -655,3 +655,4 @@ dialog pre{margin:20px 0;padding:18px;border-radius:18px;background:var(--sand);
 @media(min-width:1700px){body{font-size:18px}}
 @media(max-height:520px) and (orientation:landscape){.hero{min-height:560px;height:auto}.hero-inner{padding-top:110px;padding-bottom:140px}}
 @media print{.site-header,.dock,.cursor,.progress{display:none}}
+.spaces .panels-note{color:#aeb9aa;margin-top:18px}
