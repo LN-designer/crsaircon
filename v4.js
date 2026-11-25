@@ -23,7 +23,7 @@
   requestAnimationFrame(() => requestAnimationFrame(() => root.classList.add('is-loaded')));
   const yearEl = $('#year'); if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* ---------- Open / closed status (Asia/Kolkata, hours as published) ---------- */
+  /* ---------- Open / closed status (Asia/Kolkata, hours as published: every day, 9 AM to 9 PM) ---------- */
   safe('status', () => {
     const nodes = $$('[data-open-status]');
     if (!nodes.length || !window.Intl) return;
@@ -31,11 +31,10 @@
     const compute = () => {
       const p = Object.fromEntries(fmt.formatToParts(new Date()).map(x => [x.type, x.value]));
       const day = p.weekday; const mins = (parseInt(p.hour, 10) % 24) * 60 + parseInt(p.minute, 10);
-      const sunday = day === 'Sun'; const open = !sunday && mins >= 540 && mins < 1260;
+      const open = mins >= 540 && mins < 1260;
       let text;
       if (open) text = 'Open now · until 9 PM';
-      else if (!sunday && mins < 540) text = 'Opens today · 9 AM';
-      else if (day === 'Sat' || sunday) text = 'Closed · opens Monday 9 AM';
+      else if (mins < 540) text = 'Opens today · 9 AM';
       else text = 'Closed · opens tomorrow 9 AM';
       return { open, text };
     };
